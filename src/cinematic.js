@@ -45,39 +45,40 @@
     const labels = [...document.querySelectorAll('.story-track span')];
     if (!story || !stage || chapters.length !== 4) return;
     story.classList.add('story-enhanced');
-    gsap.set(chapters, { autoAlpha: 0 });
-    gsap.set(chapters[0], { autoAlpha: 1 });
+    story.classList.add('story-stack');
+    gsap.set(chapters, { autoAlpha: 1, yPercent: i => i ? 115 : 0, zIndex: i => i + 1, transformOrigin: '50% 0', transformPerspective: 1100 });
     const syncChapter = () => {
       let current = 0;
-      chapters.forEach((chapter, i) => {
-        if (Number(gsap.getProperty(chapter, 'opacity')) > Number(gsap.getProperty(chapters[current], 'opacity'))) current = i;
-      });
-      chapters.forEach((chapter, i) => { chapter.querySelector('.story-copy').style.visibility = i === current ? 'visible' : 'hidden'; });
+      chapters.forEach((chapter, i) => { if (Number(gsap.getProperty(chapter, 'yPercent')) < 55) current = i; });
       labels.forEach((label, i) => label.classList.toggle('is-active', i === current));
     };
     const timeline = gsap.timeline({
-      defaults: { ease: 'power2.inOut' },
-      onUpdate: syncChapter,
+      defaults: { ease: 'power2.inOut' }, onUpdate: syncChapter,
       scrollTrigger: {
         trigger: stage, start: 'top 108px', end: () => '+=' + Math.min(innerHeight * 2.4, 2400),
         pin: true, scrub: .65, anticipatePin: 1, invalidateOnRefresh: true,
       },
     });
-    // Overlap each pair so scrolling never passes through an empty frame.
+    // A new sheet folds over the previous ones; earlier cards keep their visible edges.
     chapters.slice(1).forEach((chapter, offset) => {
-      const at = 1 + offset * 1.25;
-      timeline.to(chapters[offset], { autoAlpha: 0, y: -12, scale: .985, duration: .75 }, at)
-        .fromTo(chapter, { autoAlpha: 0, y: 22, scale: 1.015 }, {
-          autoAlpha: 1, y: 0, scale: 1, duration: .75, immediateRender: false,
-        }, at + .04);
+      const at = .8 + offset * 1.25;
+      timeline.fromTo(chapter, { yPercent: 115, rotationX: -8 }, {
+        yPercent: 0, rotationX: 0, duration: .95, immediateRender: false,
+      }, at).to(chapters.slice(0, offset + 1), {
+        scale: i => 1 - .014 * (offset + 1 - i), rotationX: 2, duration: .95,
+      }, at);
     });
-    timeline.to({}, { duration: .65 });
+    timeline.to({}, { duration: .7 });
     syncChapter();
     return () => {
-      story.classList.remove('story-enhanced');
-      chapters.forEach(chapter => chapter.querySelector('.story-copy').style.removeProperty('visibility'));
+      story.classList.remove('story-enhanced', 'story-stack');
       labels.forEach(label => label.classList.remove('is-active'));
     };
+  });
+  media.add('(max-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
+    const story = document.querySelector('.collection-story');
+    story?.classList.add('story-stack-mobile');
+    return () => story?.classList.remove('story-stack-mobile');
   });
   media.add('(prefers-reduced-motion: no-preference)', () => {
     const desktop = innerWidth > 900;

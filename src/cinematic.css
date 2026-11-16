@@ -85,3 +85,37 @@
 
 .brand-mark--inline{min-width:26px;min-height:24px}
 .story-index,.story-track span.is-active{color:#BE3C17}
+
+/* Only the four garment-story cards use the folding stack. */
+.story-card-tab{display:none}
+.story-stack .story-stage-inner{perspective:1100px}
+.story-stack .story-chapter{top:calc(var(--stack-index,0)*28px);padding:48px 26px 22px;border:1px solid #D7D2C8;border-radius:2px;background:#F5F3EF;box-shadow:0 -9px 24px #24252210;will-change:transform;backface-visibility:hidden}
+.story-chapter:nth-child(1){--stack-index:0}
+.story-chapter:nth-child(2){--stack-index:1}
+.story-chapter:nth-child(3){--stack-index:2}
+.story-chapter:nth-child(4){--stack-index:3}
+.story-stack .story-chapter:nth-child(2){background:#EEEAE2}
+.story-stack .story-chapter:nth-child(3){background:#FFF}
+.story-stack .story-chapter:nth-child(4){background:#F0EEE8}
+.story-stack .story-card-tab{display:block;position:absolute;top:7px;left:24px;font:9px/1.4 var(--font-mono);letter-spacing:.05em;color:#4B4942}
+.story-stack .story-image{height:100%;min-width:0}
+.uniform-category-link{display:inline-block;margin-top:20px;font-size:12px}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+@media(max-width:900px){
+ .story-stack-mobile .story-stage-inner{overflow:visible}
+ .story-stack-mobile .story-chapter{position:sticky;top:calc(88px + var(--stack-index,0)*12px);background:#F5F3EF;border:1px solid #D7D2C8;padding:28px 18px 18px;gap:18px;box-shadow:0 -6px 18px #2425220d;min-height:0;margin-bottom:20px;z-index:calc(var(--stack-index,0) + 1)}
+ .story-stack-mobile .story-chapter:nth-child(2){background:#EEEAE2}
+ .story-stack-mobile .story-chapter:nth-child(3){background:#FFF}
+ .story-stack-mobile .story-chapter:nth-child(4){background:#F0EEE8}
+ .story-stack-mobile .story-copy h3{font-size:clamp(26px,5vw,36px);margin:10px 0}
+ .story-stack-mobile .story-copy p{font-size:11px;line-height:1.7}
+ .story-stack-mobile .story-image{height:32svh;max-height:320px;min-height:180px;width:100%}
+}
+@media(max-width:800px){
+ .hero-proof-shell{padding:30px 0}
+ .proof-type{opacity:.54;inset:0 -12px}
+ .proof-type-row{font-size:50.4px;-webkit-text-stroke:1.2px #514D45;line-height:1.12}
+ .hero-proof-shell .hero-proof{background:rgba(255,255,255,.7);backdrop-filter:none}
+}
+
+.story-stack .story-chapter:last-child .story-image img{object-fit:contain;object-position:center}
