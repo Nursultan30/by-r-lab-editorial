@@ -1,0 +1,142 @@
+{
+  "widths": [
+    {
+      "width": 360,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 351,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 381,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 421,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 759,
+          "width": 9,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 19,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 1005,
+          "width": 19,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 27,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 1413,
+          "width": 27,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "rulers": [
+        {
+          "x": 0,
+          "width": 27,
+          "visible": true,
+          "pointerEvents": "none"
+        },
+        {
+          "x": 1893,
+          "width": 27,
+          "visible": true,
+          "pointerEvents": "none"
+        }
+      ]
+    }
+  ],
+  "progressAtHalf": "49.959%",
+  "reduced": [
+    {
+      "scale": "block",
+      "needle": "none"
+    },
+    {
+      "scale": "block",
+      "needle": "none"
+    }
+  ],
+  "errors": []
+}

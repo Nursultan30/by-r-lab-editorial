@@ -52,3 +52,13 @@
  // Recalculate image-dependent scroll positions without making content invisible.
  window.addEventListener('load',()=>window.ScrollTrigger?.refresh(),{once:true});
 })();
+
+// Independent of GSAP: decorative sewing scales remain visible if motion is disabled.
+(()=>{
+ const rulers=[...document.querySelectorAll('.measure-ruler')];
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let frame=0;
+ function paint(){frame=0;if(reduced.matches)return;const max=document.documentElement.scrollHeight-innerHeight;const progress=max>0?Math.max(0,Math.min(1,scrollY/max)):0;rulers.forEach(el=>el.style.setProperty('--ruler-progress',(progress*100).toFixed(3)+'%'))}
+ function schedule(){if(!frame)frame=requestAnimationFrame(paint)}
+ addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});reduced.addEventListener('change',schedule);paint();
+})();
