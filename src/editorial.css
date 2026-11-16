@@ -21,3 +21,19 @@
 @media(max-width:1100px){.measure-ruler{width:19px}.measure-ruler-track{font-size:6px}.measure-ruler-track:before{width:5px}.measure-ruler-track:after{width:10px}}
 @media(max-width:800px){.measure-ruler{top:76px;width:9px}.measure-ruler-track span{display:none}.measure-ruler-track:before{width:4px;opacity:.45}.measure-ruler-track:after{width:8px;opacity:.45}}
 @media(prefers-reduced-motion:reduce){.measure-ruler-needle{display:none}}
+
+/* Subtle moving lettering behind the hero facts, with a quiet foreground. */
+.hero-proof-shell{position:relative;isolation:isolate;overflow:hidden;padding:30px 0 26px;margin-top:6px}
+.proof-type{position:absolute;inset:0;z-index:-1;display:flex;flex-direction:column;justify-content:center;gap:1px;pointer-events:none;overflow:hidden;opacity:.27}
+.proof-type-row{display:flex;width:max-content;animation:proof-drift 65s linear infinite;font-size:clamp(35px,4.4vw,74px);line-height:1.18;font-weight:500;letter-spacing:.025em;color:#fff;-webkit-text-stroke:1px #575650;white-space:nowrap}
+.proof-type-row span{flex:none;padding-right:.55em}
+.proof-type-row:nth-child(2){animation-direction:reverse;animation-duration:78s}
+.hero-proof-shell .hero-proof{background:rgba(255,255,255,.78);backdrop-filter:blur(2px);border-bottom:1px solid var(--color-border)}
+.fx-price{font-variant-numeric:tabular-nums;white-space:nowrap;display:inline-block;min-width:9ch}
+.hero-proof .fx-price{min-width:0}
+.sticky-wa{background:var(--color-primary);color:var(--color-text);border-color:var(--color-primary);animation:wa-soft-pulse 3.5s ease-in-out infinite}
+.sticky-wa:hover{background:var(--color-primary);color:var(--color-text);animation:none}
+@keyframes proof-drift{to{transform:translateX(-50%)}}
+@keyframes wa-soft-pulse{0%,100%{box-shadow:0 0 0 0 rgba(207,100,68,.1)}50%{box-shadow:0 0 0 8px rgba(207,100,68,.16)}}
+@media(max-width:800px){.hero-proof-shell{padding:20px 0;margin-top:0}.proof-type-row{font-size:42px;animation-duration:95s}.proof-type-row:nth-child(2){animation-duration:110s}.hero-proof-shell .hero-proof{background:rgba(255,255,255,.86)}}
+@media(prefers-reduced-motion:reduce){.proof-type-row,.sticky-wa{animation:none}}

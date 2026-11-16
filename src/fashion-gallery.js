@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const phone='996700551335';
+const phone='996551005454';
 const images=[
  {title:'Пиджаки',filter:'Пиджаки',img:'assets/gallery-tailoring.webp',desc:'Конструирование жакетов и пиджаков'},
  {title:'Пальто',filter:'Верхняя одежда',img:'assets/gallery-coat.webp',desc:'Верхняя одежда и сложные конструкции'},

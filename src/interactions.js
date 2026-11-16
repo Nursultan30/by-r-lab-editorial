@@ -1,6 +1,6 @@
 
 (()=>{'use strict';
-const WA='996700551335';const $=(s,r=document)=>r.querySelector(s);const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const WA='996551005454';const $=(s,r=document)=>r.querySelector(s);const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const messages={consult:'Здравствуйте! Я представляю бренд одежды / занимаюсь дизайном. Хочу обсудить разработку лекал, образца или пошив небольшой партии в By_R.Lab.',patterns:'Здравствуйте! Хочу обсудить разработку электронных лекал в By_R.Lab.',sewing:'Здравствуйте! Хочу рассчитать пошив небольшой партии одежды в By_R.Lab.'};
 function waUrl(text){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(text)};
 $$('[data-wa]').forEach(a=>{a.href=waUrl(messages[a.dataset.wa]||messages.consult);a.target='_blank';a.rel='noopener noreferrer'});
@@ -14,7 +14,7 @@ $('#year').textContent=new Date().getFullYear();
 
 (function(){
   'use strict';
-  const WA='996700551335';
+  const WA='996551005454';
   document.querySelectorAll('[data-service-whatsapp]').forEach(a=>{
     const service=a.getAttribute('data-service-whatsapp')||'услуги';
     const text=`Здравствуйте, By_R.Lab! Хочу обсудить услугу «${service}». Подскажите, пожалуйста, условия и стоимость.`;

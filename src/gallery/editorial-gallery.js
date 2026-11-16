@@ -28,7 +28,7 @@ function cardHTML(item,i){
  const detail=i>3&&v.detail_images?.length>1?v.detail_images[1]:null;
  return `<article class="eg-card ${wide?'eg-card--wide':i<2?'eg-card--lead':'eg-card--position-'+((i-3)%6)}" data-eg-product="${safe(item.id)}"><div class="eg-image-pair"><button class="eg-media" type="button" data-eg-open="${safe(item.id)}" data-eg-wide="${wide}" aria-label="Открыть полноэкранный просмотр: ${safe(item.title)}">${pictureHTML(v,wide,i)}<span class="eg-index" aria-hidden="true">${String(i+1).padStart(2,'0')} / ${safe(titles[item.category])}</span><span class="eg-view" aria-hidden="true">${arrow}</span></button>${detail?`<button type="button" class="eg-inset" data-eg-detail="${safe(detail)}" data-eg-open="${safe(item.id)}" aria-label="Дополнительный ракурс: ${safe(item.title)}"><img src="${safe(detail)}" alt="" loading="lazy" decoding="async"><span>Детали</span></button>`:''}</div><div class="eg-card-info"><div><h3>${safe(item.title)}</h3><p>${safe(item.subtitle)}</p></div>${color}</div></article>`;
 }
-function ctaHTML(){return `<aside class="eg-inquiry"><div><span class="eyebrow">Ваша следующая коллекция</span><h3>Увидели идею<br><em>для своего бренда?</em></h3></div><div><p>Обсудим лекала, образец и пошив небольшой партии по вашей модели.</p><a class="cta" href="https://wa.me/996700551335?text=${encodeURIComponent('Здравствуйте, By_R.Lab! Хочу обсудить пошив своей коллекции. Посмотрел(а) вашу fashion-галерею.')}" target="_blank" rel="noopener noreferrer"><span>Обсудить пошив своей коллекции</span><span class="arr">${arrow}</span></a></div></aside>`}
+function ctaHTML(){return `<aside class="eg-inquiry"><div><span class="eyebrow">Ваша следующая коллекция</span><h3>Увидели идею<br><em>для своего бренда?</em></h3></div><div><p>Обсудим лекала, образец и пошив небольшой партии по вашей модели.</p><a class="cta" href="https://wa.me/996551005454?text=${encodeURIComponent('Здравствуйте, By_R.Lab! Хочу обсудить пошив своей коллекции. Посмотрел(а) вашу fashion-галерею.')}" target="_blank" rel="noopener noreferrer"><span>Обсудить пошив своей коллекции</span><span class="arr">${arrow}</span></a></div></aside>`}
 function clearMotion(){animations.forEach(a=>{a.scrollTrigger?.kill();a.kill()});animations=[];if(window.gsap)gsap.set(root.querySelectorAll('.eg-media,.eg-media img'),{clearProps:'clipPath,opacity,transform'})}
 function enhanceMotion(){
  clearMotion();if(reduced.matches||!desktop.matches||!window.gsap||!window.ScrollTrigger)return;
@@ -76,7 +76,7 @@ function open(item,v,opener,requested){
  dialog.querySelector('#eg-detail-title').textContent=item.title;
  dialog.querySelector('#eg-detail-subtitle').textContent=item.subtitle+' / '+v.label;
  dialog.querySelector('#eg-modal-note').textContent=item.ai_note;
- dialog.querySelector('.eg-modal-inquiry').href='https://wa.me/996700551335?text='+encodeURIComponent('Здравствуйте, By_R.Lab! Хочу обсудить разработку модели: '+item.title+'.');
+ dialog.querySelector('.eg-modal-inquiry').href='https://wa.me/996551005454?text='+encodeURIComponent('Здравствуйте, By_R.Lab! Хочу обсудить разработку модели: '+item.title+'.');
  dialog.querySelector('#eg-modal-thumbnails').innerHTML=modalPhotos.map((p,i)=>`<button type="button" data-eg-photo="${i}" aria-pressed="${i===modalIndex}" aria-label="${safe(p.kind)}, кадр ${i+1}"><img src="${safe(p.src)}" alt="" loading="lazy"></button>`).join('');
  oldOverflow=document.body.style.overflow;document.body.style.overflow='hidden';updateModal();dialog.showModal();
 }
