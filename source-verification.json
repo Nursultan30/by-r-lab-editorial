@@ -1,0 +1,152 @@
+[
+  {
+    "path": "src/assets/atelier-mannequin.webp",
+    "sha1": "de8ee76acd71638bf0be54d6b4106971be489314",
+    "bytes": 7598,
+    "verified": true
+  },
+  {
+    "path": "src/assets/atelier-sewing.webp",
+    "sha1": "d473b419f74a078520b88d46de1387e3bed268c5",
+    "bytes": 7318,
+    "verified": true
+  },
+  {
+    "path": "src/assets/byrlab-logo.png",
+    "sha1": "5becbc995619ad9c0d05fee140c5d6f8c470570c",
+    "bytes": 218340,
+    "verified": true
+  },
+  {
+    "path": "src/assets/editorial-fashion.webp",
+    "sha1": "e6026ae5bb4bd5f3eae1192181c204b9c0b8d194",
+    "bytes": 8460,
+    "verified": true
+  },
+  {
+    "path": "src/assets/fabric-detail.webp",
+    "sha1": "b050effe30fd8e5b75126616066905f262253bd6",
+    "bytes": 3828,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-black-suit.webp",
+    "sha1": "2ffcec4b7fa43854066a9ee3cf5a6133b53ae1f9",
+    "bytes": 3432,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-blouse.webp",
+    "sha1": "4db7bdbcd03adfb3c8d31ab9174e31303ba01dc1",
+    "bytes": 6542,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-coat.webp",
+    "sha1": "516acffea38c858788009b1da4990015f72a84ba",
+    "bytes": 12270,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-dress.webp",
+    "sha1": "a4e212fc2ef7e5c73f6ce9caacfc428045174674",
+    "bytes": 8748,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-tailoring.webp",
+    "sha1": "ed7f35d815a725ed92cb1c6a10e1a374ef058202",
+    "bytes": 14668,
+    "verified": true
+  },
+  {
+    "path": "src/assets/gallery-tricot.webp",
+    "sha1": "12bd5a9f53d1faf0efecb3a6a2644995c9f6bfd2",
+    "bytes": 6228,
+    "verified": true
+  },
+  {
+    "path": "src/assets/hero-burgundy-reference.webp",
+    "sha1": "f9c509e2d15cd3d0dc8b20e908c307df61a5c674",
+    "bytes": 35262,
+    "verified": true
+  },
+  {
+    "path": "src/assets/hero-mannequin.webp",
+    "sha1": "ab4d4a4db73e0e17f2ddccbc74b0a9f9b793eec9",
+    "bytes": 7582,
+    "verified": true
+  },
+  {
+    "path": "src/assets/hero-model.webp",
+    "sha1": "0b473784ac9007b8c5ac73e23320dc44301a19a6",
+    "bytes": 11056,
+    "verified": true
+  },
+  {
+    "path": "src/assets/hero-pattern-designer.webp",
+    "sha1": "350b1dea4e40e7d5d7c3595e3ea6501c8781fa73",
+    "bytes": 99800,
+    "verified": true
+  },
+  {
+    "path": "src/assets/pattern-work.webp",
+    "sha1": "824dcea628f6f49c9b6b3d319bba0c3103a2b504",
+    "bytes": 10356,
+    "verified": true
+  },
+  {
+    "path": "src/assets/process-work.webp",
+    "sha1": "1bc9baa9fcfc08ae41c30e0d45be2c9160550753",
+    "bytes": 6184,
+    "verified": true
+  },
+  {
+    "path": "src/assets/service-materials-new.webp",
+    "sha1": "da457e6b6e5884c783a960d1c7ce8aa443d9eda0",
+    "bytes": 41024,
+    "verified": true
+  },
+  {
+    "path": "src/assets/service-pattern-new.webp",
+    "sha1": "d0acb876a78c6d64772242f2e0398489a237969c",
+    "bytes": 64114,
+    "verified": true
+  },
+  {
+    "path": "src/assets/service-sample-new.webp",
+    "sha1": "cb640f4fae3b1cd11f80c99953f4be0f21138238",
+    "bytes": 66764,
+    "verified": true
+  },
+  {
+    "path": "src/assets/service-sewing-new.webp",
+    "sha1": "0ae633388c50743abd317fadc2f07566e0eec0b9",
+    "bytes": 74154,
+    "verified": true
+  },
+  {
+    "path": "src/fashion-gallery.css",
+    "sha1": "e4dbc7f63be9a446168a1902f5b4fc24de1685b5",
+    "bytes": 15589,
+    "verified": true
+  },
+  {
+    "path": "src/fashion-gallery.js",
+    "sha1": "c66ea119466104086358e40b6e60440b91e80011",
+    "bytes": 10275,
+    "verified": true
+  },
+  {
+    "path": "src/index.html",
+    "sha1": "0fa68a03eea54cf957d089cc7d2f7b97b6f1457d",
+    "bytes": 103904,
+    "verified": true
+  },
+  {
+    "path": "src/vercel.json",
+    "sha1": "7874b9d27626378e9de052ef689419835361f371",
+    "bytes": 65,
+    "verified": true
+  }
+]

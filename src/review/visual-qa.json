@@ -1,0 +1,96 @@
+{
+  "screens": [
+    {
+      "screen": "desktop",
+      "section": "portfolio",
+      "headingFits": true
+    },
+    {
+      "screen": "desktop",
+      "section": "services",
+      "headingFits": true
+    },
+    {
+      "screen": "desktop",
+      "section": "process",
+      "headingFits": true
+    },
+    {
+      "screen": "desktop",
+      "section": "brief",
+      "headingFits": true
+    },
+    {
+      "screen": "mobile",
+      "section": "portfolio",
+      "headingFits": true
+    },
+    {
+      "screen": "mobile",
+      "section": "services",
+      "headingFits": true
+    },
+    {
+      "screen": "mobile",
+      "section": "process",
+      "headingFits": true
+    },
+    {
+      "screen": "mobile",
+      "section": "brief",
+      "headingFits": true
+    }
+  ],
+  "allCategories": [
+    {
+      "name": "Все",
+      "total": "06",
+      "broken": false
+    },
+    {
+      "name": "Пиджаки",
+      "total": "01",
+      "broken": false
+    },
+    {
+      "name": "Платья",
+      "total": "01",
+      "broken": false
+    },
+    {
+      "name": "Верхняя одежда",
+      "total": "01",
+      "broken": false
+    },
+    {
+      "name": "Трикотаж",
+      "total": "01",
+      "broken": false
+    },
+    {
+      "name": "Костюмы",
+      "total": "01",
+      "broken": false
+    }
+  ],
+  "errors": [],
+  "headings_360": [],
+  "headings_390": [],
+  "headings_430": [],
+  "headings_768": [],
+  "headings_1024": [],
+  "headings_1440": [],
+  "headings_1920": [],
+  "lastImage": [
+    "Пальто",
+    "Платья",
+    "Блузы",
+    "Трикотаж",
+    "Костюмы"
+  ],
+  "reducedMotion": {
+    "heroVisible": "1",
+    "customCursor": "none",
+    "animatedElements": 0
+  }
+}
