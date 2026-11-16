@@ -79,6 +79,19 @@ function open(item,v,opener,requested){
  dialog.querySelector('.eg-modal-inquiry').href='https://wa.me/996551005454?text='+encodeURIComponent('Здравствуйте, By_R.Lab! Хочу обсудить разработку модели: '+item.title+'.');
  dialog.querySelector('#eg-modal-thumbnails').innerHTML=modalPhotos.map((p,i)=>`<button type="button" data-eg-photo="${i}" aria-pressed="${i===modalIndex}" aria-label="${safe(p.kind)}, кадр ${i+1}"><img src="${safe(p.src)}" alt="" loading="lazy"></button>`).join('');
  oldOverflow=document.body.style.overflow;document.body.style.overflow='hidden';updateModal();dialog.showModal();
+ animatePhotoOpen(opener);
+}
+function animatePhotoOpen(opener){
+ if(reduced.matches||!desktop.matches||!opener?.querySelector('img'))return;
+ const source=opener.querySelector('img'),target=dialog.querySelector('#eg-detail-image');
+ const from=source.getBoundingClientRect(),to=target.getBoundingClientRect();
+ if(!from.width||!to.width||!to.height)return;
+ const clone=source.cloneNode(false);clone.removeAttribute('id');clone.alt='';clone.setAttribute('aria-hidden','true');clone.className='eg-zoom-clone';
+ Object.assign(clone.style,{left:to.left+'px',top:to.top+'px',width:to.width+'px',height:to.height+'px'});
+ dialog.append(clone);dialog.classList.add('eg-is-opening');target.style.visibility='hidden';
+ const animation=clone.animate([{transform:`translate(${from.left-to.left}px,${from.top-to.top}px) scale(${from.width/to.width},${from.height/to.height})`},{transform:'translate(0,0) scale(1,1)'}],{duration:520,easing:'cubic-bezier(.22,1,.36,1)',fill:'both'});
+ const cleanup=()=>{clone.remove();target.style.visibility='';dialog.classList.remove('eg-is-opening')};
+ animation.finished.then(cleanup,cleanup);dialog.addEventListener('close',()=>{animation.cancel();cleanup()},{once:true});
 }
 function move(delta){modalIndex=(modalIndex+delta+modalPhotos.length)%modalPhotos.length;updateModal()}
 mosaic.addEventListener('click',e=>{

@@ -1,0 +1,87 @@
+/* One brand mark and the vermilion of its R, throughout the presentation. */
+:root{--brand-orange:#DF481C;--brand-ink:#242522;--brand-paper:#F0EEE8}
+.brand-mark{object-fit:contain;flex:none;max-width:none;vertical-align:middle}
+.brand-mark--inline{display:inline-block;width:1.8em;height:1.65em;margin:0 .18em;vertical-align:middle}
+.brand-mark--header{display:block;width:66px;height:62px;margin:0}
+.header .brand{display:flex;gap:14px;align-items:center;flex:none}
+.header .brand small{max-width:110px;line-height:1.7;margin:0}
+.footer-brand .brand-mark{width:150px;height:140px;margin:0}
+.footer .footer-top{align-items:center}
+.facts-identity>img{mix-blend-mode:normal;width:115px}
+.proof-type-row .brand-mark{height:.85em;width:1em}
+.hero-figure figcaption .brand-mark{width:28px;height:26px}
+.dark .brand-mark{background:var(--brand-paper);padding:3px}
+.cta.cream{background:var(--color-primary);color:#10110F}
+.cta.cream:hover{background:#fff;color:#10110F}
+.eg-toggle{border-color:var(--color-primary)}
+.eg-filters button[aria-pressed=true]{background:var(--color-primary);color:#10110F;border-color:var(--color-primary)}
+.stitch-intro{display:none;position:fixed;inset:0;z-index:1000;background:var(--brand-paper);color:var(--brand-ink);place-items:center;pointer-events:none}
+.intro-pending .stitch-intro{display:grid;animation:intro-failsafe .01s linear 3.8s forwards}
+.stitch-intro-center{width:min(46vw,250px);text-align:center}
+.stitch-mark{position:relative;aspect-ratio:1.0667}
+.stitch-mark img{width:100%;height:100%;object-fit:contain;animation:logo-stitched 1.6s cubic-bezier(.22,1,.36,1) both}
+.stitch-mark svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.intro-thread{fill:none;stroke:var(--brand-orange);stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:1;animation:thread-draw 1.4s ease-in-out forwards,thread-fade .5s 1.4s forwards}
+.stitch-intro p{font:9px var(--font-mono);letter-spacing:.22em;margin-top:34px;color:var(--brand-ink)}
+.intro-seam{height:1px;position:relative;margin-top:20px;background:repeating-linear-gradient(90deg,#D2C8B9 0 5px,transparent 5px 9px);overflow:visible}
+.intro-seam span{position:absolute;top:-5px;width:3px;height:11px;background:var(--brand-orange);animation:needle-sew 1.6s ease-in-out both}
+#skip-intro{position:absolute;bottom:max(30px,env(safe-area-inset-bottom));right:var(--gutter);pointer-events:auto;border:0;background:none;color:var(--brand-ink);font:10px var(--font-mono);padding:15px}
+.stitch-intro.is-leaving{animation:intro-exit .65s cubic-bezier(.76,0,.24,1) forwards}
+@keyframes logo-stitched{0%{clip-path:inset(0 100% 0 0);opacity:.3}85%,100%{clip-path:inset(0);opacity:1}}
+@keyframes thread-draw{to{stroke-dashoffset:0}}
+@keyframes thread-fade{to{opacity:0}}
+@keyframes needle-sew{0%{left:0;transform:translateY(-3px)}20%,40%,60%,80%{transform:translateY(3px)}30%,50%,70%,90%{transform:translateY(-3px)}100%{left:100%;transform:translateY(0)}}
+@keyframes intro-exit{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
+@keyframes intro-failsafe{to{visibility:hidden;pointer-events:none}}
+/* The document remains complete without JavaScript. Sticky chapters are an enhancement. */
+.collection-story{margin-bottom:100px}
+.story-heading{padding-bottom:40px}
+.story-heading h2{margin:18px 0 22px}
+.story-heading p{font-size:13px}
+.story-stage{margin:0 var(--gutter);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);position:relative}
+.story-stage-inner{position:relative}
+.story-chapter{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7vw;padding:40px 0;position:relative}
+.story-copy{max-width:440px}
+.story-index{font:10px var(--font-mono);letter-spacing:.08em;color:var(--color-primary)}
+.story-copy h3{font-size:clamp(36px,4.2vw,70px);margin:25px 0;line-height:1.03}
+.story-copy p{font-size:14px;max-width:35ch}
+.story-image{height:min(65vh,650px);background:var(--brand-paper);overflow:hidden}
+.story-image img{width:100%;height:100%;object-fit:contain}
+.story-chapter:last-child .story-image img{object-fit:cover;object-position:center 25%}
+.story-track{display:flex;justify-content:space-between;border-top:1px solid var(--color-border);padding:19px 0;gap:10px;font:10px var(--font-mono)}
+.story-track span{transition:color .3s;color:var(--color-muted)}
+.story-track b{font-weight:400;color:var(--color-primary);margin-right:12px}
+.story-track span.is-active{color:var(--color-primary)}
+.story-disclosure{font-size:9px;max-width:75ch;margin:0 0 18px;line-height:1.7}
+.story-enhanced .story-stage-inner{height:min(70svh,740px)}
+.story-enhanced .story-chapter{position:absolute;inset:0;padding:24px 0;opacity:0;visibility:hidden}
+.story-enhanced .story-image{height:100%;min-height:0}
+.story-enhanced .story-chapter:first-child{opacity:1;visibility:visible}
+.craft-scene{position:relative;margin-top:100px;min-height:min(86svh,940px);display:flex;align-items:center;isolation:isolate;overflow:hidden;background:#211F1C;color:#fff}
+.craft-picture{position:absolute;inset:0;z-index:-2}
+.craft-picture img{height:100%;width:100%;object-fit:cover;filter:brightness(.55)}
+.craft-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.45),transparent)}
+.craft-content{padding-top:70px;padding-bottom:70px}
+.craft-content h2{font-size:clamp(45px,6.8vw,112px);max-width:11ch;margin:30px 0 45px}
+.craft-content .eyebrow{color:#fff}
+.craft-notes{display:flex;gap:40px}
+.craft-notes p{font-size:13px;color:#fff;display:flex;gap:15px;align-items:center}
+.craft-notes span{font:10px var(--font-mono);color:#fff;border:1px solid #ffffff55;padding:6px}
+.final--cinematic{min-height:90svh;display:flex;align-items:center;isolation:isolate;overflow:hidden}
+.final--cinematic .wrap{position:relative;z-index:2}
+.final--cinematic h2{max-width:15ch}
+.final--cinematic p{max-width:40ch}
+.final-image--cinematic{inset:0;width:100%;height:100%;opacity:.35;transform:none;background-image:linear-gradient(90deg,#F4F4F1 10%,transparent 85%),url('assets/editorial-fashion.webp');background-position:center;background-size:cover;z-index:-1}
+.final--cinematic:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#F4F4F1,transparent 45%);z-index:-1}
+.eg-zoom-clone{position:fixed;pointer-events:none;z-index:10;object-fit:cover;max-width:none;will-change:transform;transform-origin:top left}
+.eg-dialog.eg-is-opening .eg-modal-info{animation:modal-copy-enter .5s .15s both}
+@keyframes modal-copy-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:1100px){.header .brand{gap:10px}.header .brand small{max-width:85px;font-size:7px}.story-track{font-size:9px}.story-track b{margin-right:4px}}
+@media(max-width:800px){.brand-mark--header{width:52px;height:49px}.header .brand small{max-width:120px}.brand-mark--inline{width:1.7em;height:1.55em}.footer-brand .brand-mark{width:120px;height:112px}.collection-story{margin-bottom:60px}.story-heading{padding-bottom:25px}.story-chapter{grid-template-columns:1fr;gap:22px;padding:30px 0}.story-copy{max-width:none}.story-copy h3{font-size:35px;margin:12px 0}.story-copy p{font-size:12px}.story-image{height:46svh;max-height:430px}.story-track{display:none}.story-disclosure{font-size:9px}.craft-scene{margin-top:60px;min-height:68svh}.craft-content h2{font-size:clamp(45px,9vw,70px)}.craft-notes{gap:20px;flex-direction:column}.craft-notes p{font-size:12px}.final--cinematic{min-height:78svh}.final-image--cinematic{opacity:.22;background-position:65% center}.stitch-intro-center{width:180px}}
+@media(prefers-reduced-motion:reduce){.stitch-intro,.intro-pending .stitch-intro{display:none}.stitch-mark img,.intro-thread,.intro-seam span,.eg-dialog.eg-is-opening .eg-modal-info{animation:none}.story-track span{transition:none}.final-image--cinematic{transform:none}}
+/* Explicit width stays stable while ScrollTrigger wraps the pinned scene. */
+.story-stage{width:calc(100% - var(--gutter)*2);margin-left:auto;margin-right:auto}
+.story-stage-inner{overflow:hidden}
+
+.brand-mark--inline{min-width:26px;min-height:24px}
+.story-index,.story-track span.is-active{color:#BE3C17}

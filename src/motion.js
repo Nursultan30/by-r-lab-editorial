@@ -1,4 +1,4 @@
-/* Motion enhances an already visible document. No loader or JS-dependent visibility. */
+/* Motion enhances visible content; the optional intro never gates access. */
 (()=>{
  const fine=matchMedia('(pointer:fine)').matches;
  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
@@ -12,7 +12,8 @@
   mm.add('(prefers-reduced-motion: no-preference)',()=>{
    const timeline=gsap.timeline({defaults:{ease:'power3.out'}});
    timeline.from('.hero-line',{yPercent:28,opacity:0,duration:1,stagger:.1,clearProps:'all'})
-    .from('.hero-photo-mask img',{scale:1.06,opacity:.3,duration:1.4,clearProps:'all'},0)
+    .from('.hero-photo-mask img',{scale:1.13,opacity:.3,duration:1.4,clearProps:'all'},0)
+    .from('.hero-photo-mask',{clipPath:'inset(4% 4% 4% 4%)',duration:1.2,clearProps:'clipPath'},0)
     .from('.hero-description,.hero .button-row',{y:15,opacity:0,duration:.7,stagger:.12,clearProps:'all'},.45);
    gsap.utils.toArray('main section:not(#hero) h2').forEach(el=>{
     gsap.from(el,{y:32,opacity:.15,duration:.9,clearProps:'all',scrollTrigger:{trigger:el,start:'top 92%',once:true}});
@@ -48,7 +49,7 @@
   }
   cleanup=()=>{mm.revert();off.forEach(fn=>fn());document.body.classList.remove('motion-ready');cursor?.classList.remove('active')};
  }
- init();reduce.addEventListener('change',init);
+ if(window.BYRLAB_INTRO_PENDING)addEventListener('byrlab:intro-complete',init,{once:true});else init();reduce.addEventListener('change',init);
  // Recalculate image-dependent scroll positions without making content invisible.
  window.addEventListener('load',()=>window.ScrollTrigger?.refresh(),{once:true});
 })();
