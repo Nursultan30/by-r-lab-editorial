@@ -1,0 +1,178 @@
+{
+  "source_archive": "By_R_Lab_Codex_Gallery_Updated_Nov16 (9).zip",
+  "drive_file_id": "1umwdqtwTyB1_X6aQNfso020uyB-bOjx4",
+  "samples": 35,
+  "new_individual_images": 18,
+  "new_images_breakdown": {
+    "replace_collage_crops": 9,
+    "missing_primary_images": 6,
+    "separate_sample_images": 2,
+    "landscape_editorial": 1
+  },
+  "linked_ai_images": 36,
+  "optimized_original_references": 44,
+  "original_photos_in_supplied_archive": 50,
+  "low_resolution_crops_used": 0,
+  "variant_confirmation": "User requested the two previously grouped pairs as separate samples; no active color grouping in deployed data",
+  "hero_unchanged": true,
+  "production_published": false,
+  "verification": {
+    "sectionOrder": [
+      "hero",
+      "portfolio",
+      "manufactory",
+      "services-group",
+      "process",
+      "cooperation",
+      "contacts"
+    ],
+    "initialCards": 35,
+    "filters": [
+      {
+        "category": "tailoring",
+        "total": 13,
+        "matching": true
+      },
+      {
+        "category": "dresses",
+        "total": 5,
+        "matching": true
+      },
+      {
+        "category": "shirts",
+        "total": 7,
+        "matching": true
+      },
+      {
+        "category": "couture",
+        "total": 1,
+        "matching": true
+      },
+      {
+        "category": "casual",
+        "total": 6,
+        "matching": true
+      },
+      {
+        "category": "corporate",
+        "total": 3,
+        "matching": true
+      },
+      {
+        "category": "all",
+        "total": 35,
+        "matching": true
+      }
+    ],
+    "sizes": [
+      {
+        "width": 360,
+        "documentWidth": 360,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 390,
+        "documentWidth": 390,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 430,
+        "documentWidth": 430,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 768,
+        "documentWidth": 768,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 1024,
+        "documentWidth": 1024,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 1440,
+        "documentWidth": 1440,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      },
+      {
+        "width": 1920,
+        "documentWidth": 1920,
+        "overflow": false,
+        "headingOverflow": [],
+        "rulers": 2
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "modalOpen": true,
+    "modalFullViewport": {
+      "width": 1440,
+      "height": 1000,
+      "viewportWidth": 1440,
+      "viewportHeight": 1000
+    },
+    "modalNext": true,
+    "originalAvailable": "ОРИГИНАЛЬНЫЙ СНИМОК",
+    "modalClosed": true,
+    "focusReturned": true,
+    "pendingSwatches": 0,
+    "firstLayout": [
+      {
+        "id": "tailored-vest",
+        "x": 63.359375,
+        "y": 638.5,
+        "width": 643.640625,
+        "wide": false
+      },
+      {
+        "id": "tweed-set",
+        "x": 733,
+        "y": 638.5,
+        "width": 643.640625,
+        "wide": false
+      },
+      {
+        "id": "burgundy-embroidery",
+        "x": 63.359375,
+        "y": 1757.015625,
+        "width": 1313.28125,
+        "wide": true
+      }
+    ],
+    "galleryCTA": "https://wa.me/996700551335?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20By_R.Lab!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%BF%D0%BE%D1%88%D0%B8%D0%B2%20%D1%81%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8.%20%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BB(%D0%B0)%20%D0%B2%D0%B0%D1%88%D1%83%20fashion-%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8E.",
+    "mediaResources": {
+      "total": 80,
+      "broken": []
+    },
+    "menuOpens": "true",
+    "reducedMotion": {
+      "opacity": "1",
+      "clip": "none",
+      "runningAnimations": 0
+    }
+  },
+  "additional_verification": {
+    "serviceExpanded": true,
+    "faqExpanded": true,
+    "whatsappFormCorrect": true,
+    "missingAnchors": [],
+    "colorSelectorFixture": {
+      "switchesImage": true,
+      "modalUsesSelectedImage": true
+    }
+  },
+  "fidelity": "AI editorial interpretations, visually compared against originals. Original photos retained for construction/embroidery comparison; no claim of pixel-exact garment or logo reproduction and no claim of 50 completed AI images."
+}

@@ -1,0 +1,969 @@
+{
+  "brand": "By_R.Lab",
+  "source": "Client-provided portfolio materials",
+  "gallery_content_type": "35 separate garment samples; AI editorial interpretations with original comparison photos",
+  "items": [
+    {
+      "id": "tailored-vest",
+      "title": "Бежевый жилет в полоску с юбкой миди",
+      "subtitle": "Обтянутые пуговицы, прорезные карманы и прямая юбка",
+      "category": "tailoring",
+      "badge": "01 / ATELIER",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Бежевый",
+          "color": "#a39786",
+          "src": "IMG_9760.JPEG",
+          "details": [
+            "IMG_9763.JPEG",
+            "IMG_9762.JPEG"
+          ],
+          "image": "gallery/assets/ai-studio/01_tailored_vest.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9760.webp",
+            "gallery/assets/optimized/img_9763.webp",
+            "gallery/assets/optimized/img_9762.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/01_tailored_vest.webp",
+          "original_image": "gallery/assets/optimized/img_9760.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "tailored-vest",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "tweed-set",
+      "title": "Твидовый жакет с шортами",
+      "subtitle": "Короткий верх, плотная фактура и свободные шорты",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Светлый",
+          "color": "#d7d4c8",
+          "src": "IMG_0025.JPG",
+          "image": "gallery/assets/ai-studio/04_tweed_set_cream.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0025.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/04_tweed_set_cream.webp",
+          "original_image": "gallery/assets/optimized/img_0025.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "tweed-set",
+      "variants_confirmed": false,
+      "sample_label": "Светлый",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "burgundy-embroidery",
+      "title": "Бордовый жакет с золотой вышивкой",
+      "subtitle": "Вышитый орнамент на плечах и пуговицы в тон ткани",
+      "category": "tailoring",
+      "badge": "DETAIL / 01",
+      "variants": [
+        {
+          "label": "Бордовый",
+          "color": "#643540",
+          "src": "IMG_4755.jpg",
+          "details": [
+            "IMG_4756.jpg"
+          ],
+          "image": "gallery/assets/ai-studio/20261116_full_burgundy-embroidery.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4755.webp",
+            "gallery/assets/optimized/img_4756.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_burgundy-embroidery.webp",
+          "original_image": "gallery/assets/optimized/img_4755.webp",
+          "editorial_image": "gallery/assets/ai-studio/burgundy-embroidery-wide-editorial.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "burgundy-embroidery",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "tweed-set-powder",
+      "title": "Твидовый жакет с шортами",
+      "subtitle": "Короткий верх, плотная фактура и свободные шорты",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Пудровый",
+          "color": "#c9a9a1",
+          "src": "IMG_9840.jpg",
+          "image": "gallery/assets/ai-studio/tweed-set-powder-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9840.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_9840.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/tweed-set-powder-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "tweed-set",
+      "variants_confirmed": false,
+      "sample_label": "Пудровый",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "black-coat",
+      "title": "Чёрное пальто со стойкой",
+      "subtitle": "Длинный приталенный силуэт и асимметричная застёжка",
+      "category": "tailoring",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Чёрный",
+          "color": "#222425",
+          "src": "IMG_0212.JPG",
+          "image": "gallery/assets/ai-studio/20261116_full_black-coat.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0212.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_black-coat.webp",
+          "original_image": "gallery/assets/optimized/img_0212.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "black-coat",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "taupe-cape",
+      "title": "Бежевое пальто-накидка с застёжками",
+      "subtitle": "Коричневая окантовка и две металлические застёжки",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Тауп",
+          "color": "#8d8271",
+          "src": "IMG_0211.JPG",
+          "image": "gallery/assets/ai-studio/05_taupe_cape.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0211.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/05_taupe_cape.webp",
+          "original_image": "gallery/assets/optimized/img_0211.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "taupe-cape",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "burgundy-blazer",
+      "title": "Бордовый жакет с тремя пуговицами",
+      "subtitle": "Приталенный крой, карманы с клапанами и отделка манжет",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Бордовый",
+          "color": "#713a47",
+          "src": "IMG_4459.jpg",
+          "image": "gallery/assets/ai-studio/14_burgundy_jacket.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4459.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/14_burgundy_jacket.webp",
+          "original_image": "gallery/assets/optimized/img_4459.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "burgundy-blazer",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "burgundy-vest",
+      "title": "Бордовый жилет с лацканами",
+      "subtitle": "Заострённые лацканы, приталенный силуэт и пуговица в тон",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Бордовый",
+          "color": "#743746",
+          "src": "IMG_4757.jpg",
+          "image": "gallery/assets/ai-studio/20261116_full_burgundy-vest.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4757.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_burgundy-vest.webp",
+          "original_image": "gallery/assets/optimized/img_4757.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "burgundy-vest",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "grey-blazer",
+      "title": "Серый жакет с карманами-клапанами",
+      "subtitle": "Три тёмные пуговицы и рельефные швы",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Серый",
+          "color": "#868b8f",
+          "src": "IMG_4429.jpg",
+          "image": "gallery/assets/ai-studio/grey-blazer-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4429.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_4429.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/grey-blazer-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "grey-blazer",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "grey-contrast",
+      "title": "Серый жакет с белым воротником",
+      "subtitle": "Объёмные короткие рукава и расклешённая баска",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Серый",
+          "color": "#808b8e",
+          "src": "IMG_4949.jpg",
+          "image": "gallery/assets/ai-studio/13_grey_contrast_jacket.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4949.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/13_grey_contrast_jacket.webp",
+          "original_image": "gallery/assets/optimized/img_4949.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "grey-contrast",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "black-gold",
+      "title": "Чёрный жакет с золотыми пуговицами",
+      "subtitle": "Мерцающая фактура, двубортная застёжка и карманы",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Чёрный",
+          "color": "#24282c",
+          "src": "IMG_4385.jpg",
+          "image": "gallery/assets/ai-studio/12_black_gold_tweed.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4385.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/12_black_gold_tweed.webp",
+          "original_image": "gallery/assets/optimized/img_4385.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "black-gold",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "burgundy-tweed",
+      "title": "Бордовый твидовый жакет с блеском",
+      "subtitle": "Высокая стойка, золотистые пуговицы и приталенный силуэт",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Винный",
+          "color": "#552d3c",
+          "src": "IMG_0303.jpg",
+          "image": "gallery/assets/ai-studio/06_burgundy_tweed.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0303.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/06_burgundy_tweed.webp",
+          "original_image": "gallery/assets/optimized/img_0303.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "burgundy-tweed",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "black-floral",
+      "title": "Чёрный цветочный костюм с баской",
+      "subtitle": "Мелкий цветочный принт, многослойная баска и юбка миди",
+      "category": "tailoring",
+      "variants": [
+        {
+          "label": "Цветочный",
+          "color": "#262528",
+          "src": "IMG_0264.jpg",
+          "image": "gallery/assets/ai-studio/20261116_full_black-floral.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0264.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_black-floral.webp",
+          "original_image": "gallery/assets/optimized/img_0264.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "black-floral",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "white-oversized",
+      "title": "Белая рубашка свободного кроя",
+      "subtitle": "Объёмные рукава, отложной воротник и асимметричный низ",
+      "category": "shirts",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Белый",
+          "color": "#f3f3f0",
+          "src": "IMG_9744.JPEG",
+          "details": [
+            "IMG_9745.JPEG",
+            "IMG_9748.JPEG"
+          ],
+          "image": "gallery/assets/ai-studio/10_white_oversized.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9744.webp",
+            "gallery/assets/optimized/img_9745.webp",
+            "gallery/assets/optimized/img_9748.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/10_white_oversized.webp",
+          "original_image": "gallery/assets/optimized/img_9744.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "white-oversized",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "white-loose-curly",
+      "title": "Белая рубашка с удлинённой спинкой",
+      "subtitle": "Свободный силуэт и мягкая асимметрия полочек",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Белый",
+          "color": "#efefed",
+          "src": "IMG_9750.JPEG",
+          "details": [
+            "IMG_9751.JPEG"
+          ],
+          "image": "gallery/assets/ai-studio/white-loose-curly-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9750.webp",
+            "gallery/assets/optimized/img_9751.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/white-loose-curly-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_9750.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "white-loose-curly",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "black-loose",
+      "title": "Чёрная рубашка с асимметричным низом",
+      "subtitle": "Свободный объём, классический воротник и длинные рукава",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Чёрный",
+          "color": "#202022",
+          "src": "IMG_9753.JPEG",
+          "details": [
+            "IMG_9757.JPEG"
+          ],
+          "image": "gallery/assets/ai-studio/black-loose-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9753.webp",
+            "gallery/assets/optimized/img_9757.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/black-loose-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_9753.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "black-loose",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "blue-ruffles",
+      "title": "Серо-голубая блуза с жабо",
+      "subtitle": "Многослойные оборки вдоль застёжки и манжеты",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Серо-голубой",
+          "color": "#7d8d9d",
+          "src": "IMG_0277.jpg",
+          "image": "gallery/assets/ai-studio/20261116_full_blue-ruffles.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0277.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_blue-ruffles.webp",
+          "original_image": "gallery/assets/optimized/img_0277.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "blue-ruffles",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "pink-sheer",
+      "title": "Персиковая полупрозрачная рубашка",
+      "subtitle": "Воздушная ткань, объёмные рукава и длинные манжеты",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Нежный персик",
+          "color": "#edd0c9",
+          "src": "IMG_5269.PNG",
+          "image": "gallery/assets/ai-studio/pink-sheer-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_5269.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/pink-sheer-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_5269.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "pink-sheer",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "grey-top",
+      "title": "Серый трикотажный топ с кружевом",
+      "subtitle": "Кружевная отделка выреза и боковая драпировка",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Серый меланж",
+          "color": "#b5b7b4",
+          "src": "IMG_4857.JPG",
+          "image": "gallery/assets/ai-studio/20261116_full_grey-top.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_4857.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_grey-top.webp",
+          "original_image": "gallery/assets/optimized/img_4857.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "grey-top",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "white-wrap",
+      "title": "Белый асимметричный жилет",
+      "subtitle": "Застёжка на три обтянутые пуговицы и косой срез",
+      "category": "shirts",
+      "variants": [
+        {
+          "label": "Белый",
+          "color": "#eeefed",
+          "src": "IMG_1826.jpg",
+          "image": "gallery/assets/ai-studio/white-wrap-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_1826.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/white-wrap-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_1826.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "white-wrap",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "navy-polo-dress",
+      "title": "Тёмно-синее платье-поло",
+      "subtitle": "Короткий рукав, воротник и пуговицы в тон ткани",
+      "category": "dresses",
+      "variants": [
+        {
+          "label": "Тёмно-синий",
+          "color": "#1f304e",
+          "src": "IMG_0013.PNG",
+          "image": "gallery/assets/ai-studio/navy-polo-dress-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0013.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_0013.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/navy-polo-dress-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "navy-polo-dress",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "black-tiered",
+      "title": "Чёрное платье с ярусной юбкой",
+      "subtitle": "Высокая горловина, открытые плечи и многослойный подол",
+      "category": "dresses",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Чёрный",
+          "color": "#222025",
+          "src": "IMG_9652.PNG",
+          "details": [
+            "IMG_9651.PNG"
+          ],
+          "image": "gallery/assets/ai-studio/03_black_tiered_dress.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9652.webp",
+            "gallery/assets/optimized/img_9651.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/03_black_tiered_dress.webp",
+          "original_image": "gallery/assets/optimized/img_9652.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "concept_visual_check_against_real_clothes",
+      "source_group_id": "black-tiered",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "yellow-floral-dress",
+      "title": "Жёлтое платье с цветочным принтом",
+      "subtitle": "Пуговицы спереди, полупрозрачные рукава и волан по низу",
+      "category": "dresses",
+      "variants": [
+        {
+          "label": "Цветочный",
+          "color": "#e6cf7f",
+          "src": "IMG_6364.PNG",
+          "image": "gallery/assets/ai-studio/yellow-floral-dress-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6364.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/yellow-floral-dress-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_6364.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "yellow-floral-dress",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "blue-floral-dress",
+      "title": "Чёрное платье с синим цветочным принтом",
+      "subtitle": "Квадратный вырез, баска и длинная юбка",
+      "category": "dresses",
+      "variants": [
+        {
+          "label": "Синий",
+          "color": "#1f3263",
+          "src": "IMG_8810.JPG",
+          "image": "gallery/assets/ai-studio/20261116_full_blue-floral-dress.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_8810.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_blue-floral-dress.webp",
+          "original_image": "gallery/assets/optimized/img_8810.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "blue-floral-dress",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "brown-mini",
+      "title": "Шоколадное платье с воланами",
+      "subtitle": "Открытые плечи и многослойная воздушная юбка",
+      "category": "dresses",
+      "variants": [
+        {
+          "label": "Шоколадный",
+          "color": "#51423d",
+          "src": "IMG_6724.JPG",
+          "image": "gallery/assets/ai-studio/brown-mini-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6724.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/brown-mini-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_6724.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "brown-mini",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "silver-couture",
+      "title": "Серебристое вечернее платье с корсетом",
+      "subtitle": "Кружевной верх, фигурная баска и длинная юбка",
+      "category": "couture",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Серебро",
+          "color": "#b7c8cc",
+          "src": "IMG_5674.PNG",
+          "details": [
+            "IMG_5678.PNG"
+          ],
+          "image": "gallery/assets/ai-studio/20261116_full_silver-couture.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_5674.webp",
+            "gallery/assets/optimized/img_5678.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_silver-couture.webp",
+          "original_image": "gallery/assets/optimized/img_5674.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "silver-couture",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "burgundy-velour",
+      "title": "Бордовый велюровый костюм",
+      "subtitle": "Куртка на пуговицах и свободные брюки",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Бордовый",
+          "color": "#5c1d2f",
+          "src": "IMG_6372.jpg",
+          "image": "gallery/assets/ai-studio/burgundy-velour-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6372.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/burgundy-velour-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_6372.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "burgundy-velour",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "taupe-velour",
+      "title": "Бежевый велюровый костюм",
+      "subtitle": "Бархатистая фактура, брюки и верх на пуговицах",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Тауп",
+          "color": "#a9a19b",
+          "src": "IMG_6371.jpg",
+          "image": "gallery/assets/ai-studio/taupe-velour-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6371.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/taupe-velour-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_6371.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "taupe-velour",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "navy-loungewear",
+      "title": "Тёмно-синий комплект с белым кантом",
+      "subtitle": "Рубашка и широкие брюки с контрастной отделкой",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Тёмно-синий",
+          "color": "#263959",
+          "src": "IMG_0014.PNG",
+          "image": "gallery/assets/ai-studio/navy-loungewear-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0014.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "ai_studio_image": "gallery/assets/ai-studio/navy-loungewear-editorial.webp",
+          "original_image": "gallery/assets/optimized/img_0014.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "navy-loungewear",
+      "variants_confirmed": false,
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "blue-floral-loungewear",
+      "title": "Белый костюм с голубым цветочным принтом",
+      "subtitle": "Свободная рубашка и прямые широкие брюки",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Бело-голубой",
+          "color": "#b8c5d9",
+          "src": "IMG_0199.PNG",
+          "image": "gallery/assets/ai-studio/blue-floral-loungewear-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0199.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_0199.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/blue-floral-loungewear-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "blue-floral-loungewear",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "yellow-set",
+      "title": "Жёлтый костюм с цветочным узором",
+      "subtitle": "Блуза с поясом и длинная юбка с воланом",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Горчичный",
+          "color": "#d3a744",
+          "src": "IMG_8809.JPG",
+          "image": "gallery/assets/ai-studio/yellow-set-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_8809.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_8809.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/yellow-set-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "yellow-set",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "grey-hoodie",
+      "title": "Серое худи с фигурными швами",
+      "subtitle": "Молния, объёмный капюшон и контрастная прострочка",
+      "category": "casual",
+      "variants": [
+        {
+          "label": "Меланж",
+          "color": "#b0b3b4",
+          "src": "IMG_0824.PNG",
+          "image": "gallery/assets/ai-studio/grey-hoodie-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_0824.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_0824.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/grey-hoodie-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "grey-hoodie",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    },
+    {
+      "id": "helios-polo",
+      "title": "Корпоративное поло с вышивкой",
+      "subtitle": "Воротник и манжеты контрастного цвета, фирменный знак",
+      "category": "corporate",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Синий",
+          "color": "#1d3154",
+          "src": "IMG_6470.JPG",
+          "image": "gallery/assets/ai-studio/20261116_full_helios-polo.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6470.webp"
+          ],
+          "ai_studio_image": "gallery/assets/ai-studio/20261116_full_helios-polo.webp",
+          "original_image": "gallery/assets/optimized/img_6470.webp",
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "full_resolution_editorial_concept_verify_product",
+      "source_group_id": "helios-polo",
+      "variants_confirmed": false,
+      "sample_label": "Синий",
+      "ai_note": "AI-визуализация. Точность фирменной вышивки проверяйте по оригиналу."
+    },
+    {
+      "id": "helios-polo-beige",
+      "title": "Корпоративное поло с вышивкой",
+      "subtitle": "Воротник и манжеты контрастного цвета, фирменный знак",
+      "category": "corporate",
+      "feature": true,
+      "variants": [
+        {
+          "label": "Бежевый",
+          "color": "#c4b49b",
+          "src": "IMG_9845.jpg",
+          "image": "gallery/assets/ai-studio/helios-polo-beige-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_9845.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_9845.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/helios-polo-beige-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "source_group_id": "helios-polo",
+      "variants_confirmed": false,
+      "sample_label": "Бежевый",
+      "ai_note": "AI-визуализация. Точность фирменной вышивки проверяйте по оригиналу."
+    },
+    {
+      "id": "denim-workwear",
+      "title": "Джинсовая куртка с накладными карманами",
+      "subtitle": "Металлические пуговицы и контрастная отделочная строчка",
+      "category": "corporate",
+      "variants": [
+        {
+          "label": "Деним",
+          "color": "#273c5e",
+          "src": "IMG_6450.PNG",
+          "image": "gallery/assets/ai-studio/denim-workwear-editorial.webp",
+          "detail_images": [
+            "gallery/assets/optimized/img_6450.webp"
+          ],
+          "photo_status": "ai_editorial_concept_with_original_comparison",
+          "original_image": "gallery/assets/optimized/img_6450.webp",
+          "ai_studio_image": "gallery/assets/ai-studio/denim-workwear-editorial.webp",
+          "needs_production_review": true
+        }
+      ],
+      "source_group_id": "denim-workwear",
+      "variants_confirmed": false,
+      "ai_generated": true,
+      "ai_status": "individual_full_resolution_editorial_preview",
+      "ai_note": "AI-визуализация. Детали изделия сверяйте с оригинальными снимками."
+    }
+  ],
+  "ai_generated_individual_images": 35,
+  "new_individual_ai_frames": 18,
+  "low_resolution_previews_used": 0,
+  "color_variant_grouping": "User requested separate samples, 2026-11-16",
+  "original_source_photos_in_source_archive": 50,
+  "optimized_original_references_in_web_bundle": 44
+}
