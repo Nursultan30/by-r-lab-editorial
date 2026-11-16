@@ -9,6 +9,9 @@ const byId=new Map(items.map(x=>[x.id,x]));
 const safe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const arrow='<svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>';
 const reduced=matchMedia('(prefers-reduced-motion:reduce)'),desktop=matchMedia('(min-width:901px)');
+const PREVIEW_COUNT=3;
+const toggle=root.querySelector('#eg-toggle'),topCollapse=root.querySelector('#eg-collapse-top'),panel=root.querySelector('#eg-expand-panel'),categorySelect=root.querySelector('#eg-category-select');
+let expanded=false;
 let active='all',animations=[],refreshTimer=0,modalPhotos=[],modalIndex=0,modalProduct=null,lastOpener=null,oldOverflow='';
 function photosFor(item,v){
  const all=[v.image,v.editorial_image,v.original_image,...(v.detail_images||[])].filter(Boolean);
@@ -16,7 +19,7 @@ function photosFor(item,v){
 }
 function pictureHTML(v,wide,i){
  const main=wide&&v.editorial_image?v.editorial_image:v.image;
- return `<picture>${wide&&v.editorial_image?`<source media="(max-width:600px)" srcset="${safe(v.image)}">`:''}<img src="${safe(main)}" alt="" width="${wide?1536:1024}" height="${wide?1024:1536}" loading="${i<2?'eager':'lazy'}" decoding="async"></picture>`;
+ return `<picture><img src="${safe(main)}" alt="" width="${wide?1536:1024}" height="${wide?1024:1536}" loading="${i<2?'eager':'lazy'}" decoding="async"></picture>`;
 }
 function cardHTML(item,i){
  const v=item.variants[0],wide=i===2||i>5&&(i-3)%8===6;
@@ -35,10 +38,30 @@ function enhanceMotion(){
  ScrollTrigger.refresh();
 }
 function render(){
- clearMotion();const data=active==='all'?items:items.filter(x=>x.category===active);
- const html=data.map((x,i)=>cardHTML(x,i)+(i===2?ctaHTML():'')).join('');mosaic.innerHTML=html;
- const n=data.length;root.querySelector('#eg-result-count').textContent=`${n} ${n%10===1&&n%100!==11?'образец':n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'образца':'образцов'}`;
+ clearMotion();const all=active==='all'?items:items.filter(x=>x.category===active);
+ const data=expanded?all:all.slice(0,PREVIEW_COUNT),n=all.length,more=n>PREVIEW_COUNT;
+ root.dataset.expanded=String(expanded&&more);
+ mosaic.innerHTML=data.map((x,i)=>cardHTML(x,i)+(i===2?ctaHTML():'')).join('');
+ const noun=n%10===1&&n%100!==11?'образец':n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'образца':'образцов';
+ root.querySelector('#eg-result-count').textContent=expanded?`${n} ${noun}`:`${data.length} из ${n} ${noun}`;
+ panel.hidden=!more;topCollapse.hidden=!(expanded&&more);
+ toggle.setAttribute('aria-expanded',String(expanded));
+ toggle.querySelector('[data-eg-toggle-label]').textContent=expanded?'Свернуть галерею':'Смотреть полную галерею';
+ root.querySelector('#eg-preview-note').textContent=expanded?`Открыты все ${n} ${noun}`:`В полной галерее — ${n} ${noun}`;
  enhanceMotion();
+}
+function setExpanded(next){
+ expanded=next;render();
+ requestAnimationFrame(()=>{
+  const target=expanded?mosaic.querySelectorAll('[data-eg-product]')[PREVIEW_COUNT]?.querySelector('.eg-media'):root;
+  const focusTarget=expanded?target:innerWidth<=600?categorySelect:filters.find(b=>b.dataset.egFilter===active);
+  focusTarget?.focus({preventScroll:true});
+  if(target){const offset=(innerWidth<=800?90:110)+(expanded?root.querySelector('.eg-statebar').offsetHeight:0);const top=target.getBoundingClientRect().top+scrollY-offset;const instant=!expanded||reduced.matches||innerWidth<=600;scrollTo({top:Math.max(0,top),behavior:instant?'instant':'smooth'})}
+ });
+}
+function setCategory(value){
+ active=value;expanded=false;categorySelect.value=value;
+ filters.forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.egFilter===value)));render();
 }
 function updateModal(){
  const photo=modalPhotos[modalIndex],img=dialog.querySelector('#eg-detail-image');if(!photo)return;
@@ -69,10 +92,14 @@ mosaic.addEventListener('click',e=>{
  }
  const opener=e.target.closest('[data-eg-open]');if(!opener)return;
  const v=item.variants[Number(card.dataset.variant||0)];
- const requested=opener.dataset.egDetail||(opener.dataset.egWide==='true'&&innerWidth>600?v.editorial_image:null)||v.image;
+ const requested=opener.dataset.egDetail||(opener.dataset.egWide==='true'?v.editorial_image:null)||v.image;
  open(item,v,opener,requested);
 });
-filters.forEach(btn=>btn.addEventListener('click',()=>{active=btn.dataset.egFilter;filters.forEach(x=>x.setAttribute('aria-pressed',String(x===btn)));render()}));
+filters.forEach(btn=>btn.addEventListener('click',()=>setCategory(btn.dataset.egFilter)));
+categorySelect.innerHTML=filters.map(b=>`<option value="${safe(b.dataset.egFilter)}">${safe(b.textContent.trim().replace(/\s+\d+$/,''))}</option>`).join('');
+categorySelect.addEventListener('change',()=>setCategory(categorySelect.value));
+toggle.addEventListener('click',()=>setExpanded(!expanded));
+topCollapse.addEventListener('click',()=>setExpanded(false));
 dialog.querySelector('#eg-modal-close').addEventListener('click',()=>dialog.close());
 dialog.querySelector('#eg-modal-prev').addEventListener('click',()=>move(-1));dialog.querySelector('#eg-modal-next').addEventListener('click',()=>move(1));
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();const button=e.target.closest('[data-eg-photo]');if(button){modalIndex=Number(button.dataset.egPhoto);updateModal()}});
