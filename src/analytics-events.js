@@ -15,10 +15,16 @@
         page_path: location.pathname,
         link_section: a.closest('section')?.id || a.closest('footer')?.className || 'other'
       });
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'whatsapp_click', {
+          channel: 'whatsapp', source_location: 'website', page_path: location.pathname
+        });
+      }
     } catch (_) {}
   }, true);
   document.addEventListener('submit', event => {
     if (!['quoteForm', 'uniformForm'].includes(event.target?.id)) return;
     send({ event: 'whatsapp_form_intent', source_location: 'website', form_id: event.target.id, page_path: location.pathname });
+    if (typeof window.gtag === 'function') window.gtag('event', 'whatsapp_form_intent', { source_location: 'website', form_id: event.target.id, page_path: location.pathname });
   }, true);
 })();
