@@ -17,7 +17,7 @@
     const data = new FormData(form);
     const field = name => String(data.get(name) || '').trim() || 'уточним';
     const message = `Здравствуйте, By_R.Lab! Хочу обсудить униформу для команды.\n\nКомпания: ${field('company')}\nНаправление: ${field('sector')}\nСтрана: ${field('country')}\nСотрудников: ${field('count')}\nДиапазон размеров: ${field('sizeMin')} — ${field('sizeMax')}\nКомплект и пожелания: ${field('garments')}\n\nХочу согласовать пробный образец, размерную линейку для примерки сотрудников и условия пошива партии.`;
-    window.open(waURL(message), '_blank', 'noopener,noreferrer');
+    window.open(waURL(message+'\n\nИсточник: САЙТ By_R_Lab\nСтраница: '+location.pathname), '_blank', 'noopener,noreferrer');
   });
   const header = document.querySelector('#header');
   const toggle = document.querySelector('#menuToggle');
